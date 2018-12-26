@@ -1,6 +1,11 @@
 # react-native-tiny-toast
 A react native toast like component , it works on IOS and Android.
 
+[ ![release](https://img.shields.io/github/release/shx996/react-native-tiny-toast.svg?maxAge=2592000?style=flat-square)](https://github.com/shx996/react-native-tiny-toast/releases)
+[ ![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen.svg)](https://github.com/shx996/react-native-tiny-toast/pulls)
+[ ![NPM version](http://img.shields.io/npm/v/react-native-tiny-toast.svg?style=flat)](https://www.npmjs.com/package/react-native-tiny-toast)
+[![License MIT](http://img.shields.io/badge/license-MIT-orange.svg?style=flat)](https://raw.githubusercontent.com/shx996/react-native-tiny-toast/master/LICENSE)
+
 #### Features
 1. Support iPhone X, XS, XS Max & XR
 2. Support both Android and IOS.
@@ -108,6 +113,6 @@ Method                     | Type     |  Description
 show(text, options)        | Function | Show toast
 showSuccess(text, options) | Function | Show toast with success icon
 showLoading(text, options) | Function | Show toast with ActivityIndicator
-hide                       | Function | Hide toast                     
+hide                       | Function | Hide the last toast                     
 
 **MIT Licensed**
