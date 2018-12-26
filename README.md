@@ -38,6 +38,8 @@ Toast.show('Custom toast',{
   maskStyle:{},
   ...
 })
+
+Toast.hide()
 ```
 
 ##### **Using a Component**
@@ -106,5 +108,6 @@ Method                     | Type     |  Description
 show(text, options)        | Function | Show toast
 showSuccess(text, options) | Function | Show toast with success icon
 showLoading(text, options) | Function | Show toast with ActivityIndicator
+hide                       | Function | Hide toast                     
 
 **MIT Licensed**
