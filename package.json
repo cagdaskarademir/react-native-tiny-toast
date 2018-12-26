@@ -17,7 +17,8 @@
     "toast",
     "toast-ios",
     "ios",
-    "loading"
+    "loading",
+    "tiny-toast"
   ],
   "author": "shx996",
   "license": "MIT",
