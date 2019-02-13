@@ -110,6 +110,7 @@ maskStyle           | null                     | ViewPropTypes.style  | Mask sty
 imgSource           | null                     | Image.source         | Image source
 imgStyle            | null                     | Image.propTypes.style| Image style
 loading             | false(true when showLoading) | Boolean          | Whether to show loading
+indicatorSize       | large                    | String or Number     | Set the ActivityIndicator size，Currently only specific values can be set on Android.
 onHidden            | null                     | Function             | Triggered when toast's hide animation end
 onMaskPress         | null                     | Function             | Triggered when the mask is clicked
  
