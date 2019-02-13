@@ -18,7 +18,13 @@ export default class App extends Component<Props> {
   }
 
   showLoading = () => {
-    Toast.showLoading('Loading...', {duration: 1000})
+    const toast = Toast.showLoading('Loading...')
+    setTimeout(() => {
+      // recommend
+      Toast.hide(toast)
+      // If you don't pass toast，it will hide the last toast by default.
+      // Toast.hide()
+    }, 3000)
   }
 
   showCustom = () => {
@@ -36,35 +42,35 @@ export default class App extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
-      <TouchableOpacity
-    style={styles.actionView}
-    activeOpacity={.8}
-    onPress={this.showDefault}>
-      <Text style={styles.actionText}>Default show</Text>
-    </TouchableOpacity>
+        <TouchableOpacity
+          style={styles.actionView}
+          activeOpacity={.8}
+          onPress={this.showDefault}>
+          <Text style={styles.actionText}>Default show</Text>
+        </TouchableOpacity>
 
-    <TouchableOpacity
-    style={styles.actionView}
-    activeOpacity={.8}
-    onPress={this.showSuccess}>
-      <Text style={styles.actionText}>Default showSuccess</Text>
-    </TouchableOpacity>
+        <TouchableOpacity
+          style={styles.actionView}
+          activeOpacity={.8}
+          onPress={this.showSuccess}>
+          <Text style={styles.actionText}>Default showSuccess</Text>
+        </TouchableOpacity>
 
-    <TouchableOpacity
-    style={styles.actionView}
-    activeOpacity={.8}
-    onPress={this.showLoading}>
-      <Text style={styles.actionText}>Default showLoading</Text>
-    </TouchableOpacity>
+        <TouchableOpacity
+          style={styles.actionView}
+          activeOpacity={.8}
+          onPress={this.showLoading}>
+          <Text style={styles.actionText}>Default showLoading</Text>
+        </TouchableOpacity>
 
-    <TouchableOpacity
-    style={styles.actionView}
-    activeOpacity={.8}
-    onPress={this.showCustom}>
-      <Text style={styles.actionText}>Cutom toast</Text>
-    </TouchableOpacity>
-    </View>
-  )
+        <TouchableOpacity
+          style={styles.actionView}
+          activeOpacity={.8}
+          onPress={this.showCustom}>
+          <Text style={styles.actionText}>Cutom toast</Text>
+        </TouchableOpacity>
+      </View>
+    )
   }
 }
 

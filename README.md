@@ -4,7 +4,7 @@ A react native toast like component , it works on IOS and Android.
 [ ![release](https://img.shields.io/github/release/shx996/react-native-tiny-toast.svg?maxAge=2592000?style=flat-square)](https://github.com/shx996/react-native-tiny-toast/releases)
 [ ![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen.svg)](https://github.com/shx996/react-native-tiny-toast/pulls)
 [ ![NPM version](http://img.shields.io/npm/v/react-native-tiny-toast.svg?style=flat)](https://www.npmjs.com/package/react-native-tiny-toast)
-[![License MIT](http://img.shields.io/badge/license-MIT-orange.svg?style=flat)](https://raw.githubusercontent.com/shx996/react-native-tiny-toast/master/LICENSE)
+[ ![License MIT](http://img.shields.io/badge/license-MIT-orange.svg?style=flat)](https://raw.githubusercontent.com/shx996/react-native-tiny-toast/master/LICENSE)
 
 #### Features
 1. Support iPhone X, XS, XS Max & XR
@@ -31,8 +31,6 @@ Toast.show('This is a default toast')
 
 Toast.showSuccess('Pay success')
 
-Toast.showLoading('Loading...')
-
 Toast.show('Custom toast',{
   position: Toast.position.center,
   containerStyle:{},
@@ -44,7 +42,14 @@ Toast.show('Custom toast',{
   ...
 })
 
-Toast.hide()
+const toast = Toast.showLoading('Loading...')
+setTimeout(() => {
+  // Recommend
+  Toast.hide(toast) 
+  // or Toast.hide()
+  // If you don't pass toast，it will hide the last toast by default.
+ }, 3000)
+    
 ```
 
 ##### **Using a Component**
@@ -107,12 +112,13 @@ imgStyle            | null                     | Image.propTypes.style| Image st
 loading             | false(true when showLoading) | Boolean          | Whether to show loading
 onHidden            | null                     | Function             | Triggered when toast's hide animation end
 onMaskPress         | null                     | Function             | Triggered when the mask is clicked
+ 
 
 Method                     | Type     |  Description
 ---------------------------|----------|-------------------
 show(text, options)        | Function | Show toast
 showSuccess(text, options) | Function | Show toast with success icon
 showLoading(text, options) | Function | Show toast with ActivityIndicator
-hide                       | Function | Hide the last toast                     
+hide(toast)                | Function | If you don't pass toast，it will hide the last toast by default.                    
 
 **MIT Licensed**
