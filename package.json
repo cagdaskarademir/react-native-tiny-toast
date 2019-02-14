@@ -1,6 +1,6 @@
 {
   "name": "react-native-tiny-toast",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "😊A react native toast like component , it works on IOS and Android.",
   "main": "./index.js",
   "scripts": {
