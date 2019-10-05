@@ -1,6 +1,6 @@
 {
   "name": "react-native-tiny-toast",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "😊A react native toast like component , it works on IOS and Android.",
   "main": "./index.js",
   "scripts": {
@@ -28,7 +28,7 @@
   "homepage": "https://github.com/shx996/react-native-tiny-toast#readme",
   "dependencies": {
     "prop-types": "latest",
-    "react-native-iphone-x-helper": "latest",
+    "react-native-iphone-x-helper": "1.2.1",
     "react-native-root-siblings": "3.2.3"
   },
   "peerDependencies": {
