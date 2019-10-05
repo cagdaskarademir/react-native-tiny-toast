@@ -29,7 +29,7 @@
   "dependencies": {
     "prop-types": "latest",
     "react-native-iphone-x-helper": "latest",
-    "react-native-root-siblings": "latest"
+    "react-native-root-siblings": "3.2.3"
   },
   "peerDependencies": {
     "react-native": ">=0.47.0"
